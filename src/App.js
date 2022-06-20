@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import CardContainer from "./Components/CardContainer";
+import Form from "./Components/Form";
+
 
 function App() {
+  const [name, setName] = useState("");
+  const [dept, setDept] = useState("");
+  const [rating, setRating] = useState("");
+  const [users, setusers] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Form
+        name={name}
+        setName={setName}
+        dept={dept}
+        setDept={setDept}
+        rating={rating}
+        setRating={setRating}
+        users={users}
+        setusers={setusers}
+      />
+      {users.length>0 && <CardContainer users={users} setusers={setusers} />}
+     
+     
+    </>
+    
   );
 }
 

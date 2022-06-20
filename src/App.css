@@ -1,38 +1,78 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textbox{
+  background-color: lightblue;
+  height: 35px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px solid black;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.btn{
+  background-color: aqua;
+  height: 40px;
+  width: 180px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formdata{
+  width: 30%;
+  margin: auto;
+  padding-left: 10px;
+  margin-top: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.cardData{
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns:  auto auto;
+  gap: 30px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  height: 100%;
+  border: 2px solid black;
+  padding: 10px;
+}
+span{
+  font-weight: 600;
+}
+.card{
+  background-color: hotpink;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.UserData{
+  font-size: 20px;
+  text-align: center;
 }
